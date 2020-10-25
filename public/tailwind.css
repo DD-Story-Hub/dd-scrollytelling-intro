@@ -1,0 +1,72 @@
+@tailwind base;
+body {
+  font-family: 'Helvetica', 'Arial', 'Noto Sans TC', '黑體-繁', '微軟正黑體', sans-serif;
+}
+h1 {
+  @apply text-4xl font-semibold leading-normal tracking-wide mt-8;
+  color: #4d4d4d;
+}
+h4 {
+  @apply text-3xl font-medium leading-normal tracking-wide;
+  color: #4d4d4d;
+}
+p {
+  @apply whitespace-normal tracking-wide;
+  color: #4d4d4d;
+}
+/* layout setting */
+.article-grid-template {
+  @apply grid grid-cols-12 gap-x-4 grid-flow-row;
+  margin: 0 auto;
+}
+.article-grid {
+  @apply col-start-1 col-end-13;
+}
+/* generally elements setting */
+
+.article-p {
+  @apply mt-8 text-lg leading-8;
+}
+.article-h4 {
+  @apply mt-10;
+}
+.nav {
+  @apply flex justify-between items-center  py-2 px-2 shadow;
+}
+.footer {
+  @apply flex justify-center p-8 mt-8 font-light tracking-wide;
+}
+/* color setting */
+.text-dd-green-500 {
+  color: #0b967d;
+}
+.text-dd-green-300 {
+  color: #82c0af;
+}
+.text-dd-green-100 {
+  color: #d6eae4;
+}
+.bg-dd-green-500 {
+  background-color: #0b967d;
+}
+.bg-dd-green-300 {
+  background-color: #82c0af;
+}
+.bg-dd-green-100 {
+  background-color: #d6eae4;
+}
+/* screen sm */
+@screen sm {
+  .article-grid {
+    @apply col-start-3 col-end-11;
+  }
+}
+
+@screen lg {
+  .article-grid {
+    @apply col-start-4 col-end-10;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
